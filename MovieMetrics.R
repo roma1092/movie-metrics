@@ -57,7 +57,7 @@ limited_parent4$budget2 <- as.numeric(gsub('[$,]','',as.character(limited_parent
 limited_parent4$gross2 <- as.numeric(gsub("[^\\d]+", "", sub(" .*", "", limited_parent4$info.x.gross), perl=TRUE))
 
 ####analyze data####
-#bivariate#
+#bivariable#
 model1 <- lm(gross2~budget2, data = limited_parent4)
 summary(model1)
 coefficients(model1) # model coefficients
