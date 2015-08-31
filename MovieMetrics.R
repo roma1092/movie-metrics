@@ -1,3 +1,5 @@
+###
+
 #make connection with SQL server "imdb"
 library(RMySQL)
 mydb <- dbConnect(MySQL(), user='root', password='romale10', dbname='imdb', host='localhost' )
