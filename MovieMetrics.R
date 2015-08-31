@@ -15,7 +15,7 @@ dbListTables(mydb)
 #run test query
 kind_type <- dbGetQuery(mydb, "select * from kind_type")
 
-####read in files####
+####read in file####
 movie_info <- dbGetQuery(mydb, "select * from movie_info")
 info_type <- dbGetQuery(mydb, "select * from info_type")
 names = dbGetQuery(mydb, "select * from Name")
